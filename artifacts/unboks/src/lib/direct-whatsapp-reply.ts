@@ -1,4 +1,4 @@
-import { isAliRentalTenant, isSpainSpanishTenant } from "@/lib/tenant-ui";
+import { isAliRentalTenant, isMermaidReservationTenant, isSpainSpanishTenant } from "@/lib/tenant-ui";
 
 export interface DirectReplyContext {
   channel: string;
@@ -62,7 +62,7 @@ export function canShowDirectWhatsAppReply(
   slug?: string,
 ): boolean {
   return (
-    (isSpainSpanishTenant(slug) || isAliRentalTenant(slug)) &&
+    (isSpainSpanishTenant(slug) || isAliRentalTenant(slug) || isMermaidReservationTenant(slug)) &&
     context.channel.toLowerCase() === "whatsapp" &&
     !context.archived &&
     !context.resolved

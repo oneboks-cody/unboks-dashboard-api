@@ -11,7 +11,7 @@ describe("direct WhatsApp reply tenant boundary", () => {
     localStorage.clear();
   });
 
-  it("enables active WhatsApp replies for Ali and Clínica only", () => {
+  it("enables active WhatsApp replies for Ali, Clínica and Mermaid", () => {
     const activeWhatsApp = {
       channel: "WhatsApp",
       archived: false,
@@ -20,25 +20,26 @@ describe("direct WhatsApp reply tenant boundary", () => {
 
     expect(canShowDirectWhatsAppReply(activeWhatsApp, "ali-car-rental")).toBe(true);
     expect(canShowDirectWhatsAppReply(activeWhatsApp, "consulta-despertares")).toBe(true);
+    expect(canShowDirectWhatsAppReply(activeWhatsApp, "mermaid")).toBe(true);
     expect(canShowDirectWhatsAppReply(activeWhatsApp, "unboks")).toBe(false);
   });
 
-  it("never enables replies for email, archived, or resolved conversations", () => {
+  it.each(["ali-car-rental", "consulta-despertares", "mermaid"])("never enables replies for email, archived, or resolved conversations in %s", (slug) => {
     expect(canShowDirectWhatsAppReply({
       channel: "email",
       archived: false,
       resolved: false,
-    }, "ali-car-rental")).toBe(false);
+    }, slug)).toBe(false);
     expect(canShowDirectWhatsAppReply({
       channel: "whatsapp",
       archived: true,
       resolved: false,
-    }, "ali-car-rental")).toBe(false);
+    }, slug)).toBe(false);
     expect(canShowDirectWhatsAppReply({
       channel: "whatsapp",
       archived: false,
       resolved: true,
-    }, "ali-car-rental")).toBe(false);
+    }, slug)).toBe(false);
   });
 
   it("keeps the approved Ali English and Clínica Spanish copy", () => {
