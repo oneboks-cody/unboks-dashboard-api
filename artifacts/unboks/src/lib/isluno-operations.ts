@@ -198,3 +198,46 @@ export const fetchIslunoGuests = (q = "", offset = 0) =>
     "/isluno/operations/guests?" +
       new URLSearchParams({ q, offset: String(offset) }),
   );
+
+export interface IslunoToday {
+  as_of: string;
+  journeys: Pick<
+    Journey,
+    | "id"
+    | "guest_name"
+    | "stage"
+    | "stage_label"
+    | "item_count"
+    | "totals"
+    | "updated_at"
+    | "inbox_path"
+  >[];
+  attention: {
+    id: string;
+    journey_id: string;
+    guest_name: string;
+    kind: string;
+    status: string;
+    label: string;
+    inbox_path: string;
+  }[];
+  scheduled_today: {
+    journey_id: string;
+    item_id: string;
+    guest_name: string;
+    product_name: string;
+    starts_at: string;
+    timezone: string;
+    stage_label: string;
+  }[];
+  counts: {
+    itineraries: number;
+    trip_items: number;
+    demo_paid: number;
+    attention: number;
+  };
+  availability: "assumed_demo";
+  payment: "simulated";
+}
+export const fetchIslunoToday = () =>
+  scopedRead<IslunoToday>("/isluno/operations/today");
