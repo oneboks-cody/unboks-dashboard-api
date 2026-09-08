@@ -106,6 +106,13 @@ export interface JourneyDetail extends Journey {
     sha256: string;
   }[];
   deliveries: {
+    quote_id: string;
+    quote_version: number;
+    quote_status: string;
+    document_kind: string | null;
+    item_id: string | null;
+    ticket_id: string | null;
+    part_count: number;
     job_id: string;
     part: number;
     stage: string;

@@ -4,6 +4,7 @@ import {
   render,
   screen,
   waitFor,
+  within,
 } from "@testing-library/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Route, Switch } from "wouter";
@@ -129,7 +130,26 @@ it("shows corrected quote versions, server stages and ambiguous acceptance witho
   expect(screen.getByText("Quote version 1 · superseded")).toBeTruthy();
   expect(screen.getByText("Quote version 2 · approved")).toBeTruthy();
   fireEvent.click(screen.getByText("Delivery"));
-  expect(screen.getByText("ambiguous")).toBeTruthy();
+  expect(screen.getAllByText("ambiguous")).toHaveLength(2);
+  const oldParts = screen
+    .getAllByRole("heading", { name: "Quote version 1 · superseded" })
+    .map((el) => el.parentElement!);
+  const currentParts = screen
+    .getAllByRole("heading", { name: "Quote version 2 · approved" })
+    .map((el) => el.parentElement!);
+  expect(oldParts.some((el) => within(el).queryByText("ambiguous"))).toBe(true);
+  expect(
+    currentParts.some((el) => within(el).queryByText("Accepted by provider")),
+  ).toBe(true);
+  for (const part of [...oldParts, ...currentParts]) {
+    expect(within(part).getByText(/Quote reference:/)).toBeTruthy();
+    expect(within(part).getByText(/Part \d+ of \d+/)).toBeTruthy();
+  }
+  expect(
+    currentParts.some((el) =>
+      within(el).queryByText(/ticket reference:.*Trip/),
+    ),
+  ).toBe(true);
   expect(screen.getAllByText("Accepted by provider").length).toBeGreaterThan(0);
   expect(screen.getAllByText("queued").length).toBeGreaterThan(0);
   expect(

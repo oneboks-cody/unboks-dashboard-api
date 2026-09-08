@@ -2,9 +2,9 @@
   "listing": {
     "items": [
       {
-        "id": "d816ca8f0268be532bd2755336e87264c40a84cc4b54711d7f1f3d19c36a073b.87db771c17d195bb4e0c0bd5d4a1100d",
+        "id": "d816ca8f0268be532bd2755336e87264c40a84cc4b54711d7f1f3d19c36a073b.66841bea0a1d19c3d8a02933c0fbf4a8",
         "guest_id": "d816ca8f0268be532bd2755336e87264c40a84cc4b54711d7f1f3d19c36a073b",
-        "itinerary_id": "87db771c17d195bb4e0c0bd5d4a1100d",
+        "itinerary_id": "66841bea0a1d19c3d8a02933c0fbf4a8",
         "brand": "Isluno",
         "guest_name": "Calvin",
         "customer_ref": "fixture-whatsapp-three",
@@ -21,8 +21,8 @@
           "total_minor": 25000
         },
         "revision": 3,
-        "created_at": "2026-09-08T18:01:48+00:00",
-        "updated_at": "2026-09-08T18:02:24+00:00",
+        "created_at": "2026-09-08T18:01:36+00:00",
+        "updated_at": "2026-09-08T18:02:12+00:00",
         "valid_actions": {
           "open_inbox": true,
           "advance_booking": false,
@@ -33,8 +33,8 @@
         "supplier_booking_made": false,
         "latest_quote_valid": null,
         "reference_codes": [
-          "b9007876bbab26233d2a28e30aaf121f",
-          "055b66138b88dc65f6e0a4937b29f298"
+          "251c1c08426757210aa341f221e8c0fa",
+          "95e9e5bc1e342b47462a38d9f97c50fb"
         ],
         "product_names": [
           "Synthetic Cruise"
@@ -48,7 +48,7 @@
           "name": "Calvin"
         },
         "item_details": {
-          "b8c6f91e3c185d2b5a81e6d9f5a911df": {
+          "3d9b6b64ec8ae18c33aa40c9ede33656": {
             "guest_name": "Calvin",
             "pickup_location": null
           }
@@ -75,7 +75,7 @@
         },
         "revision": 5,
         "created_at": "2026-09-08T18:00:00+00:00",
-        "updated_at": "2026-09-08T18:01:30+00:00",
+        "updated_at": "2026-09-08T18:01:18+00:00",
         "valid_actions": {
           "open_inbox": true,
           "advance_booking": false,
@@ -86,9 +86,9 @@
         "supplier_booking_made": false,
         "latest_quote_valid": null,
         "reference_codes": [
-          "55a52eb61b68088f5aed30b980f47aa4",
-          "fbbac74e7315f4e9a507e9c8378f599f",
-          "dd2f1c78aa6d4e95f402e346f5aedd3f"
+          "3e48a85e8966ab1b3ce642f88ff25bd5",
+          "f28988c66a1cec71bdd2681581c6173f",
+          "bdb655a0ebeafb1adb9581367fd0b851"
         ],
         "product_names": [
           "Synthetic Cruise",
@@ -188,7 +188,7 @@
     },
     "revision": 5,
     "created_at": "2026-09-08T18:00:00+00:00",
-    "updated_at": "2026-09-08T18:01:30+00:00",
+    "updated_at": "2026-09-08T18:01:18+00:00",
     "valid_actions": {
       "open_inbox": true,
       "advance_booking": false,
@@ -199,9 +199,9 @@
     "supplier_booking_made": false,
     "latest_quote_valid": null,
     "reference_codes": [
-      "55a52eb61b68088f5aed30b980f47aa4",
-      "fbbac74e7315f4e9a507e9c8378f599f",
-      "dd2f1c78aa6d4e95f402e346f5aedd3f"
+      "3e48a85e8966ab1b3ce642f88ff25bd5",
+      "f28988c66a1cec71bdd2681581c6173f",
+      "bdb655a0ebeafb1adb9581367fd0b851"
     ],
     "product_names": [
       "Synthetic Cruise",
@@ -510,7 +510,7 @@
         "taxes_fees": "included",
         "total_minor": 50000
       },
-      "updated_at": "2026-09-08T18:01:30+00:00"
+      "updated_at": "2026-09-08T18:01:18+00:00"
     },
     "versions": [
       {
@@ -1243,7 +1243,7 @@
           "taxes_fees": "included",
           "total_minor": 50000
         },
-        "updated_at": "2026-09-08T18:00:42+00:00"
+        "updated_at": "2026-09-08T18:00:30+00:00"
       },
       {
         "brand_snapshot": {
@@ -1520,12 +1520,12 @@
           "taxes_fees": "included",
           "total_minor": 50000
         },
-        "updated_at": "2026-09-08T18:01:30+00:00"
+        "updated_at": "2026-09-08T18:01:18+00:00"
       }
     ],
     "quotes": [
       {
-        "id": "fbbac74e7315f4e9a507e9c8378f599f",
+        "id": "f28988c66a1cec71bdd2681581c6173f",
         "version": 1,
         "status": "superseded",
         "snapshot": {
@@ -1542,7 +1542,7 @@
             ],
             "name": "Second Party"
           },
-          "id": "fbbac74e7315f4e9a507e9c8378f599f",
+          "id": "f28988c66a1cec71bdd2681581c6173f",
           "item_details": {
             "3c511e4da9e86b5cfea0865b8d205c5c": {
               "guest_name": "Second Party",
@@ -1835,18 +1835,18 @@
           "version": 1
         },
         "summary_confirmed_at": "2026-09-08T18:00:24+00:00",
-        "approved_at": "2026-09-08T18:00:36+00:00",
+        "approved_at": null,
         "expires_at": "2026-09-09T18:00:00+00:00",
-        "sha256": "bb0b8806b2fd775ca07a6a5f0f43d7334d5fa8842eac1b8c14a5d16cc6079283"
+        "sha256": "92959c0a90bc500bb3e8c241509d0c909d25c1730966699761aeafb92553bbce"
       },
       {
-        "id": "55a52eb61b68088f5aed30b980f47aa4",
+        "id": "3e48a85e8966ab1b3ce642f88ff25bd5",
         "version": 2,
         "status": "approved",
         "snapshot": {
           "catalog_revision": "5ddfe59124f1bd916c71c2332f6d43f6459d2c63e55b563868811f55f2d788ae",
           "chat_language": "en",
-          "created_at": "2026-09-08T18:00:42+00:00",
+          "created_at": "2026-09-08T18:00:30+00:00",
           "demo_only": true,
           "document_language": "en",
           "guest": {
@@ -1857,7 +1857,7 @@
             ],
             "name": "Second Party"
           },
-          "id": "55a52eb61b68088f5aed30b980f47aa4",
+          "id": "3e48a85e8966ab1b3ce642f88ff25bd5",
           "item_details": {
             "3c511e4da9e86b5cfea0865b8d205c5c": {
               "guest_name": "Second Party",
@@ -2143,22 +2143,22 @@
               "taxes_fees": "included",
               "total_minor": 50000
             },
-            "updated_at": "2026-09-08T18:00:42+00:00"
+            "updated_at": "2026-09-08T18:00:30+00:00"
           },
           "pending": {},
           "real_booking_eligible": false,
           "version": 2
         },
-        "summary_confirmed_at": "2026-09-08T18:01:12+00:00",
-        "approved_at": "2026-09-08T18:01:24+00:00",
-        "expires_at": "2026-09-09T18:00:42+00:00",
-        "sha256": "0e8ecbd9a44388b4bc0253b32181e1ccdb8d193cd2012ac28f6db43d66856206"
+        "summary_confirmed_at": "2026-09-08T18:01:00+00:00",
+        "approved_at": "2026-09-08T18:01:12+00:00",
+        "expires_at": "2026-09-09T18:00:30+00:00",
+        "sha256": "9a06cb4ea29cd2f7600350240605bfd280593601ac4b70c0cd066834f3c29ae6"
       }
     ],
     "payment": {
-      "id": "dd2f1c78aa6d4e95f402e346f5aedd3f",
-      "quote_id": "55a52eb61b68088f5aed30b980f47aa4",
-      "paid_at": "2026-09-08T18:01:30+00:00",
+      "id": "bdb655a0ebeafb1adb9581367fd0b851",
+      "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+      "paid_at": "2026-09-08T18:01:18+00:00",
       "mode": "simulated",
       "real_money_charged": false,
       "supplier_booking_made": false,
@@ -2166,47 +2166,54 @@
     },
     "documents": [
       {
-        "id": "fbbac74e7315f4e9a507e9c8378f599f",
+        "id": "f28988c66a1cec71bdd2681581c6173f",
         "kind": "quote",
         "item_id": null,
         "quote_version": 1,
-        "sha256": "bb0b8806b2fd775ca07a6a5f0f43d7334d5fa8842eac1b8c14a5d16cc6079283"
+        "sha256": "92959c0a90bc500bb3e8c241509d0c909d25c1730966699761aeafb92553bbce"
       },
       {
-        "id": "55a52eb61b68088f5aed30b980f47aa4",
+        "id": "3e48a85e8966ab1b3ce642f88ff25bd5",
         "kind": "quote",
         "item_id": null,
         "quote_version": 2,
-        "sha256": "0e8ecbd9a44388b4bc0253b32181e1ccdb8d193cd2012ac28f6db43d66856206"
+        "sha256": "9a06cb4ea29cd2f7600350240605bfd280593601ac4b70c0cd066834f3c29ae6"
       },
       {
-        "id": "282a30cb7f66f352dd437ab321355e2f",
+        "id": "932061a07f9502759bd18eb19fc293bb",
         "kind": "receipt",
         "item_id": null,
         "ticket_id": null,
-        "sha256": "30f8a3d7b330b46b15b179c74a07bc4eebb02685e5fc350bd1b3fdb69a5bfc7e",
-        "expires_at": "2026-10-08T18:01:30+00:00"
+        "sha256": "3fe8a23cc9ffac6dd9cf6b0973bca76ff3c6662a9aad3c73ca1d0089ddfc3b83",
+        "expires_at": "2026-10-08T18:01:18+00:00"
       },
       {
-        "id": "ddfbd9442f206279e4bceae68860859f",
+        "id": "d06329fdcca5bd183bc648c0605d790b",
         "kind": "ticket",
         "item_id": "4e78b61f6c704666dacd5d885dc6ae1e",
-        "ticket_id": "ISL-DEMO-0F1BD82C5A5FC4F4",
-        "sha256": "0c2bc8179e3d8b2fff36d52866c29f379cd3965f303d5fd6ae70054ea9792edf",
-        "expires_at": "2026-10-08T18:01:30+00:00"
+        "ticket_id": "ISL-DEMO-CA0D0A539ABB132B",
+        "sha256": "b2363e13182ca3b8aee5c7decb614d855c78520cc259816443a6fc454f206c02",
+        "expires_at": "2026-10-08T18:01:18+00:00"
       },
       {
-        "id": "9380d6ae33ba725c66383a278fd68612",
+        "id": "c22f81a547ee53f35e632854c087fc5c",
         "kind": "ticket",
         "item_id": "3c511e4da9e86b5cfea0865b8d205c5c",
-        "ticket_id": "ISL-DEMO-1F089E4B49F1BBC6",
-        "sha256": "fd4c34099ce8140b8e8beb25ddfe7f915a69cce55f3575c1fdb24957c3210b79",
-        "expires_at": "2026-10-08T18:01:30+00:00"
+        "ticket_id": "ISL-DEMO-8772CE9045C8893B",
+        "sha256": "7b15f5e90561d03458c564a8dbdc56a5d97b670aa49b4d0526834ffef0b9c261",
+        "expires_at": "2026-10-08T18:01:18+00:00"
       }
     ],
     "deliveries": [
       {
-        "job_id": "58535eb6f9037b1218dc12ddb834ad06",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "d705a7f02942f77483b35ac028b6f12a",
         "part": 0,
         "stage": "summary",
         "status": "accepted",
@@ -2216,7 +2223,14 @@
         "delivered_at": null
       },
       {
-        "job_id": "58535eb6f9037b1218dc12ddb834ad06",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "d705a7f02942f77483b35ac028b6f12a",
         "part": 1,
         "stage": "summary",
         "status": "accepted",
@@ -2226,7 +2240,14 @@
         "delivered_at": null
       },
       {
-        "job_id": "58535eb6f9037b1218dc12ddb834ad06",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "d705a7f02942f77483b35ac028b6f12a",
         "part": 2,
         "stage": "summary",
         "status": "accepted",
@@ -2236,7 +2257,14 @@
         "delivered_at": null
       },
       {
-        "job_id": "58535eb6f9037b1218dc12ddb834ad06",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "d705a7f02942f77483b35ac028b6f12a",
         "part": 3,
         "stage": "summary",
         "status": "accepted",
@@ -2246,7 +2274,14 @@
         "delivered_at": null
       },
       {
-        "job_id": "58535eb6f9037b1218dc12ddb834ad06",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "d705a7f02942f77483b35ac028b6f12a",
         "part": 4,
         "stage": "summary",
         "status": "accepted",
@@ -2256,38 +2291,83 @@
         "delivered_at": null
       },
       {
-        "job_id": "606574017c945850b81499417b8852bb",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": "quote",
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 2,
+        "job_id": "b0656d1262d162f46f07e54cdc9ce84e",
         "part": 0,
         "stage": "quote",
-        "status": "accepted",
-        "provider_id": "provider-6",
-        "document_id": "fbbac74e7315f4e9a507e9c8378f599f",
+        "status": "ambiguous",
+        "provider_id": null,
+        "document_id": "f28988c66a1cec71bdd2681581c6173f",
         "label": "WhatsApp quote",
         "delivered_at": null
       },
       {
-        "job_id": "606574017c945850b81499417b8852bb",
+        "quote_id": "f28988c66a1cec71bdd2681581c6173f",
+        "quote_version": 1,
+        "quote_status": "superseded",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 2,
+        "job_id": "b0656d1262d162f46f07e54cdc9ce84e",
         "part": 1,
         "stage": "quote",
+        "status": "queued",
+        "provider_id": null,
+        "document_id": null,
+        "label": "WhatsApp quote",
+        "delivered_at": null
+      },
+      {
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "f9eda5cf1002062bb5916db78ef13fdb",
+        "part": 0,
+        "stage": "summary",
         "status": "accepted",
         "provider_id": "provider-7",
         "document_id": null,
-        "label": "WhatsApp quote",
+        "label": "WhatsApp summary",
         "delivered_at": null
       },
       {
-        "job_id": "adab11c1bc0e206f67b17435ee3a1968",
-        "part": 0,
-        "stage": "approved",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "f9eda5cf1002062bb5916db78ef13fdb",
+        "part": 1,
+        "stage": "summary",
         "status": "accepted",
         "provider_id": "provider-8",
         "document_id": null,
-        "label": "WhatsApp approved",
+        "label": "WhatsApp summary",
         "delivered_at": null
       },
       {
-        "job_id": "97bde3d1e05e6e18ed7650f362cc16b1",
-        "part": 0,
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "f9eda5cf1002062bb5916db78ef13fdb",
+        "part": 2,
         "stage": "summary",
         "status": "accepted",
         "provider_id": "provider-9",
@@ -2296,8 +2376,15 @@
         "delivered_at": null
       },
       {
-        "job_id": "97bde3d1e05e6e18ed7650f362cc16b1",
-        "part": 1,
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "f9eda5cf1002062bb5916db78ef13fdb",
+        "part": 3,
         "stage": "summary",
         "status": "accepted",
         "provider_id": "provider-10",
@@ -2306,8 +2393,15 @@
         "delivered_at": null
       },
       {
-        "job_id": "97bde3d1e05e6e18ed7650f362cc16b1",
-        "part": 2,
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "f9eda5cf1002062bb5916db78ef13fdb",
+        "part": 4,
         "stage": "summary",
         "status": "accepted",
         "provider_id": "provider-11",
@@ -2316,97 +2410,133 @@
         "delivered_at": null
       },
       {
-        "job_id": "97bde3d1e05e6e18ed7650f362cc16b1",
-        "part": 3,
-        "stage": "summary",
-        "status": "accepted",
-        "provider_id": "provider-12",
-        "document_id": null,
-        "label": "WhatsApp summary",
-        "delivered_at": null
-      },
-      {
-        "job_id": "97bde3d1e05e6e18ed7650f362cc16b1",
-        "part": 4,
-        "stage": "summary",
-        "status": "accepted",
-        "provider_id": "provider-13",
-        "document_id": null,
-        "label": "WhatsApp summary",
-        "delivered_at": null
-      },
-      {
-        "job_id": "3ca15ae1f0e55133e573d7d6a5347e7f",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": "quote",
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 2,
+        "job_id": "0100a26e4c0890a5c1fe0d911ce7c3a9",
         "part": 0,
         "stage": "quote",
         "status": "accepted",
-        "provider_id": "provider-14",
-        "document_id": "55a52eb61b68088f5aed30b980f47aa4",
+        "provider_id": "provider-12",
+        "document_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
         "label": "WhatsApp quote",
         "delivered_at": null
       },
       {
-        "job_id": "3ca15ae1f0e55133e573d7d6a5347e7f",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 2,
+        "job_id": "0100a26e4c0890a5c1fe0d911ce7c3a9",
         "part": 1,
         "stage": "quote",
         "status": "accepted",
-        "provider_id": "provider-15",
+        "provider_id": "provider-13",
         "document_id": null,
         "label": "WhatsApp quote",
         "delivered_at": null
       },
       {
-        "job_id": "80f819de8eb1dd4c0e43df050ad1cdbe",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 1,
+        "job_id": "a35367fdd04db3223913b45978421cf3",
         "part": 0,
         "stage": "approved",
         "status": "accepted",
-        "provider_id": "provider-16",
+        "provider_id": "provider-14",
         "document_id": null,
         "label": "WhatsApp approved",
         "delivered_at": null
       },
       {
-        "job_id": "3ae42cbd6766bc5045dbbf12a399caa2",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "af3a091bb2b0b5c6df59c1aeb355a38f",
         "part": 0,
         "stage": "fulfilled",
         "status": "accepted",
-        "provider_id": "fake-17",
+        "provider_id": "fake-15",
         "document_id": null,
         "label": "WhatsApp fulfilled",
         "delivered_at": null
       },
       {
-        "job_id": "3ae42cbd6766bc5045dbbf12a399caa2",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": "receipt",
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "af3a091bb2b0b5c6df59c1aeb355a38f",
         "part": 1,
         "stage": "fulfilled",
         "status": "accepted",
-        "provider_id": "fake-18",
-        "document_id": "282a30cb7f66f352dd437ab321355e2f",
-        "label": "Isluno-receipt-dd2f1c78aa6d4e95f402e346f5aedd3f.pdf",
+        "provider_id": "fake-16",
+        "document_id": "932061a07f9502759bd18eb19fc293bb",
+        "label": "Isluno-receipt-bdb655a0ebeafb1adb9581367fd0b851.pdf",
         "delivered_at": null
       },
       {
-        "job_id": "3ae42cbd6766bc5045dbbf12a399caa2",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": "ticket",
+        "item_id": "4e78b61f6c704666dacd5d885dc6ae1e",
+        "ticket_id": "ISL-DEMO-CA0D0A539ABB132B",
+        "part_count": 5,
+        "job_id": "af3a091bb2b0b5c6df59c1aeb355a38f",
         "part": 2,
         "stage": "fulfilled",
         "status": "ambiguous",
         "provider_id": null,
-        "document_id": "ddfbd9442f206279e4bceae68860859f",
-        "label": "Isluno-ticket-ISL-DEMO-0F1BD82C5A5FC4F4.pdf",
+        "document_id": "d06329fdcca5bd183bc648c0605d790b",
+        "label": "Isluno-ticket-ISL-DEMO-CA0D0A539ABB132B.pdf",
         "delivered_at": null
       },
       {
-        "job_id": "3ae42cbd6766bc5045dbbf12a399caa2",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": "ticket",
+        "item_id": "3c511e4da9e86b5cfea0865b8d205c5c",
+        "ticket_id": "ISL-DEMO-8772CE9045C8893B",
+        "part_count": 5,
+        "job_id": "af3a091bb2b0b5c6df59c1aeb355a38f",
         "part": 3,
         "stage": "fulfilled",
         "status": "queued",
         "provider_id": null,
-        "document_id": "9380d6ae33ba725c66383a278fd68612",
-        "label": "Isluno-ticket-ISL-DEMO-1F089E4B49F1BBC6.pdf",
+        "document_id": "c22f81a547ee53f35e632854c087fc5c",
+        "label": "Isluno-ticket-ISL-DEMO-8772CE9045C8893B.pdf",
         "delivered_at": null
       },
       {
-        "job_id": "3ae42cbd6766bc5045dbbf12a399caa2",
+        "quote_id": "3e48a85e8966ab1b3ce642f88ff25bd5",
+        "quote_version": 2,
+        "quote_status": "approved",
+        "document_kind": null,
+        "item_id": null,
+        "ticket_id": null,
+        "part_count": 5,
+        "job_id": "af3a091bb2b0b5c6df59c1aeb355a38f",
         "part": 4,
         "stage": "fulfilled",
         "status": "queued",
@@ -2420,7 +2550,7 @@
       {
         "kind": "Quote prepared",
         "at": "2026-09-08T18:00:00+00:00",
-        "reference": "fbbac74e7315f4e9a507e9c8378f599f",
+        "reference": "f28988c66a1cec71bdd2681581c6173f",
         "version": 1
       },
       {
@@ -2444,54 +2574,48 @@
       {
         "kind": "Summary confirmed",
         "at": "2026-09-08T18:00:24+00:00",
-        "reference": "fbbac74e7315f4e9a507e9c8378f599f",
-        "version": 1
-      },
-      {
-        "kind": "Quote approved",
-        "at": "2026-09-08T18:00:36+00:00",
-        "reference": "fbbac74e7315f4e9a507e9c8378f599f",
+        "reference": "f28988c66a1cec71bdd2681581c6173f",
         "version": 1
       },
       {
         "kind": "Quote prepared",
-        "at": "2026-09-08T18:00:42+00:00",
-        "reference": "55a52eb61b68088f5aed30b980f47aa4",
+        "at": "2026-09-08T18:00:30+00:00",
+        "reference": "3e48a85e8966ab1b3ce642f88ff25bd5",
         "version": 2
       },
       {
         "kind": "Itinerary revision",
-        "at": "2026-09-08T18:00:42+00:00",
+        "at": "2026-09-08T18:00:30+00:00",
         "revision": 4,
         "status": "draft"
       },
       {
         "kind": "Summary confirmed",
-        "at": "2026-09-08T18:01:12+00:00",
-        "reference": "55a52eb61b68088f5aed30b980f47aa4",
+        "at": "2026-09-08T18:01:00+00:00",
+        "reference": "3e48a85e8966ab1b3ce642f88ff25bd5",
         "version": 2
       },
       {
         "kind": "Quote approved",
-        "at": "2026-09-08T18:01:24+00:00",
-        "reference": "55a52eb61b68088f5aed30b980f47aa4",
+        "at": "2026-09-08T18:01:12+00:00",
+        "reference": "3e48a85e8966ab1b3ce642f88ff25bd5",
         "version": 2
       },
       {
         "kind": "Demo payment completed",
-        "at": "2026-09-08T18:01:30+00:00",
-        "reference": "dd2f1c78aa6d4e95f402e346f5aedd3f"
+        "at": "2026-09-08T18:01:18+00:00",
+        "reference": "bdb655a0ebeafb1adb9581367fd0b851"
       },
       {
         "kind": "Itinerary revision",
-        "at": "2026-09-08T18:01:30+00:00",
+        "at": "2026-09-08T18:01:18+00:00",
         "revision": 5,
         "status": "demo_paid"
       },
       {
         "kind": "Verified payment action recorded",
         "at": null,
-        "reference": "turn-10"
+        "reference": "turn-9"
       }
     ],
     "operator_requests": [],
@@ -2508,7 +2632,7 @@
         ],
         "itinerary_count": 1,
         "item_count": 1,
-        "updated_at": "2026-09-08T18:02:24+00:00",
+        "updated_at": "2026-09-08T18:02:12+00:00",
         "inbox_path": "/conversations?c=fixture-guest-three"
       },
       {
@@ -2519,7 +2643,7 @@
         ],
         "itinerary_count": 1,
         "item_count": 2,
-        "updated_at": "2026-09-08T18:01:30+00:00",
+        "updated_at": "2026-09-08T18:01:18+00:00",
         "inbox_path": "/conversations?c=fixture-guest-two"
       },
       {

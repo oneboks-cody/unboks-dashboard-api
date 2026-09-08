@@ -576,6 +576,9 @@ export function IslunoJourneyPage() {
                     key={d.job_id + ":" + d.part}
                     className="rounded-xl border p-4"
                   >
+                    <h3 className="mb-2 font-semibold">
+                      Quote version {d.quote_version} · {d.quote_status}
+                    </h3>
                     <div className="flex flex-wrap justify-between gap-2">
                       <strong className="break-words text-sm">{d.label}</strong>
                       <span
@@ -586,6 +589,21 @@ export function IslunoJourneyPage() {
                           : d.status}
                       </span>
                     </div>
+                    <p className="mt-2 break-all text-xs text-slate-500">
+                      {d.stage.replaceAll("_", " ")} · Part {d.part + 1} of{" "}
+                      {d.part_count}
+                    </p>
+                    <p className="mt-2 break-all text-xs text-slate-500">
+                      Quote reference: {d.quote_id}
+                    </p>
+                    {d.document_id && (
+                      <p className="mt-2 break-all text-xs text-slate-500">
+                        {d.document_kind ?? "Document"} reference:{" "}
+                        {d.document_id}
+                        {d.ticket_id ? " · Ticket " + d.ticket_id : ""}
+                        {d.item_id ? " · Trip " + d.item_id : ""}
+                      </p>
+                    )}
                     <p className="mt-2 break-all text-xs text-slate-500">
                       Provider reference: {d.provider_id ?? "Not available"}
                     </p>

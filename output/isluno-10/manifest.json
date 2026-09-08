@@ -49,6 +49,14 @@
     {
       "file": "12-tenant-switch.png",
       "sha256": "a6cb2ee7e72c8e854e009e0cf69d6de4af9d1358b4750219fcabe58bb976fed4"
+    },
+    {
+      "file": "13-quote-delivery-associations.png",
+      "sha256": "22580c2008392e156a53b35aaa52ee7d8e06edbada84582975a01a69af6fc813"
+    },
+    {
+      "file": "14-mobile-delivery-associations.png",
+      "sha256": "27e63abf85a0499ed428b434613013ec357aeb8ecc5a33bd169a4963df185f43"
     }
   ]
 }
