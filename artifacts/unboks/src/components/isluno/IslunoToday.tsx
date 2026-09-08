@@ -1,3 +1,4 @@
+import { IslunoRecovery } from "./IslunoRecovery";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { DashboardShell } from "@/components/inbox/DashboardShell";
@@ -122,6 +123,7 @@ export function IslunoTodayPage() {
                 </div>
               )}
             </section>
+            {data.recovery && <IslunoRecovery data={data.recovery} />}
             <section className={card}>
               <h2 className="mb-3 text-lg font-semibold">
                 Trips scheduled today

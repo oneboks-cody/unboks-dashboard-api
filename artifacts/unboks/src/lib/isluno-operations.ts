@@ -200,6 +200,42 @@ export const fetchIslunoGuests = (q = "", offset = 0) =>
   );
 
 export interface IslunoToday {
+  recovery?: {
+    reminders_enabled: boolean;
+    incidents: {
+      id: string;
+      scope_key: string;
+      itinerary_id: string | null;
+      kind: string;
+      status: string;
+      code: string;
+      created_at: string;
+    }[];
+    reminders: {
+      id: string;
+      itinerary_id: string;
+      due_at: string;
+      status: string;
+      provider_id: string | null;
+      reason: string | null;
+    }[];
+    outbound_failures: {
+      id: string;
+      status: string;
+      provider_id: string | null;
+    }[];
+    legacy: {
+      activated_at: string | null;
+      quarantined: {
+        source: string;
+        reference: string;
+        conversation_id: string | null;
+        original_status: string;
+        disposition: string;
+        sha256: string;
+      }[];
+    };
+  };
   as_of: string;
   journeys: Pick<
     Journey,

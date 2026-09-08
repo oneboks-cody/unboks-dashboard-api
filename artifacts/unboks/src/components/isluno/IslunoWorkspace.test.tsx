@@ -1,5 +1,6 @@
 import {
   cleanup,
+  within,
   fireEvent,
   render,
   renderHook,
@@ -17,6 +18,7 @@ import { tenantKeyFor } from "@/lib/query-keys";
 import { useSetAgentStatus } from "@/hooks/use-agent-status";
 import type { ReactNode } from "react";
 import today from "../../../tests/isluno-today.fixture.json";
+import recoveryToday from "../../../tests/isluno-recovery.fixture.json";
 let enabled = true;
 let status: any = { available: false, active: null, status: "unavailable" };
 let statusFailure = false;
@@ -258,4 +260,26 @@ it("never presents an unavailable attention API as an empty healthy queue", asyn
   expect(
     screen.queryByText("No pending or failed journey actions recorded."),
   ).toBeNull();
+});
+
+it("shows the recovery API audit in the real shell without offering blind retries", async () => {
+  const implementation = vi.mocked(fetch).getMockImplementation()!;
+  vi.mocked(fetch).mockImplementation((url, init) =>
+    String(url).endsWith("/isluno/operations/today")
+      ? Promise.resolve(json(recoveryToday))
+      : implementation(url, init),
+  );
+  setup(<MermaidToday />);
+  const region = await screen.findByRole("region", { name: "Recovery and cutover audit" });
+  const audit = within(region);
+  expect(audit.getByText("understanding failure")).toBeTruthy();
+  expect(audit.getByText(/operator_review · RuntimeError/)).toBeTruthy();
+  expect(audit.getByText(/Reminders: disabled/)).toBeTruthy();
+  expect(audit.getAllByText(/ambiguous/).length).toBeGreaterThan(0);
+  expect(audit.getByText(/suppressed · customer_reply/)).toBeTruthy();
+  expect(audit.getByRole("link", { name: "Review saved itinerary" }).getAttribute("href")).toMatch(/^\/itineraries\//);
+  expect(audit.getByRole("link", { name: "Open original Mermaid records" }).getAttribute("href")).toBe("/reservations?view=mermaid");
+  expect(audit.getAllByText(/uncertain outcome reconcile no replay/).length).toBeGreaterThan(0);
+  expect(audit.queryAllByRole("button")).toHaveLength(0);
+  expect(vi.mocked(fetch).mock.calls.every(([, options]) => !options?.method || options.method === "GET")).toBe(true);
 });
