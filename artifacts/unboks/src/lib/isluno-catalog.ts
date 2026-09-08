@@ -95,7 +95,7 @@ export interface IslunoCapabilities {
   enabled: boolean;
   known: boolean;
   tenant_slug: string | null;
-  capabilities: { catalog_editor: boolean };
+  capabilities: { catalog_editor: boolean; itinerary_workspace?: boolean };
 }
 export const fetchIslunoCapabilities = () =>
   apiFetch<IslunoCapabilities>(
