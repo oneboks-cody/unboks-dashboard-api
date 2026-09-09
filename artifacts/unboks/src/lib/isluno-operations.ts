@@ -204,8 +204,10 @@ export interface IslunoToday {
     reminders_enabled: boolean;
     incidents: {
       id: string;
+      inbox_path?: string;
       scope_key: string;
       itinerary_id: string | null;
+      delivery_progress_verified?: boolean;
       kind: string;
       status: string;
       code: string;
@@ -213,6 +215,7 @@ export interface IslunoToday {
     }[];
     reminders: {
       id: string;
+      inbox_path?: string;
       itinerary_id: string;
       due_at: string;
       status: string;
@@ -220,7 +223,11 @@ export interface IslunoToday {
       reason: string | null;
     }[];
     outbound_failures: {
+      reason?: string;
+      http_status?: number | null;
+      parts?: { index: number; status: string; reason?: string | null; http_status?: number | null }[];
       id: string;
+      inbox_path?: string;
       status: string;
       provider_id: string | null;
     }[];

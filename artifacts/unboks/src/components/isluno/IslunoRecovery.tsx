@@ -23,12 +23,18 @@ export function IslunoRecovery({
         <article key={item.id} className="mb-3 rounded-xl border p-4">
           <strong>{item.kind.replaceAll("_", " ")}</strong>
           <p>
-            {item.status} · {item.code}
+            {item.status === "progress_resumed_new_turn" && !item.delivery_progress_verified
+              ? "Earlier progress recorded; delivery unverified" : item.status} · {item.code}
           </p>
           <p className="my-2 text-sm">
             Saved progress is retained. No automatic model retry or send is
             claimed.
           </p>
+          {item.inbox_path && (
+            <Link className="mr-4 inline-flex min-h-11 items-center font-semibold text-teal-800" href={item.inbox_path}>
+              Open conversation
+            </Link>
+          )}
           {item.itinerary_id && (
             <Link
               className="inline-flex min-h-11 items-center font-semibold text-teal-800"
@@ -43,10 +49,26 @@ export function IslunoRecovery({
         </article>
       ))}
       {data.outbound_failures.map((item) => (
-        <p key={item.id} className="mb-2 break-all text-sm">
-          Discovery reply {item.id} · {item.status} · Provider reference:{" "}
-          {item.provider_id ?? "unknown"}
-        </p>
+        <article key={item.id} className="mb-3 rounded-xl border p-4 text-sm">
+          <strong>Reply delivery: {item.status.replaceAll("_", " ")}</strong>
+          <p>{item.reason?.replaceAll("_", " ") ?? "Detailed reason was not recorded"}
+            {item.http_status != null ? " · HTTP " + item.http_status : ""}</p>
+          {item.parts?.map((part) => (
+            <p key={part.index}>Part {part.index + 1}: {part.status.replaceAll("_", " ")}
+              {part.reason ? " · " + part.reason.replaceAll("_", " ") : ""}
+              {part.http_status != null ? " · HTTP " + part.http_status : ""}</p>
+          ))}
+          <p className="my-2">Review the conversation before any follow-up. This page does not resend messages.</p>
+          {item.inbox_path && (
+            <Link className="inline-flex min-h-11 items-center font-semibold text-teal-800" href={item.inbox_path}>
+              Open conversation
+            </Link>
+          )}
+          <details className="mt-2 break-all">
+            <summary>Delivery reference</summary>
+            <p>{item.id} · Provider: {item.provider_id ?? "unknown"}</p>
+          </details>
+        </article>
       ))}
       {data.reminders.map((item) => (
         <p key={item.id} className="mb-2 break-all text-sm">
